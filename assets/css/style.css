@@ -1,15 +1,21 @@
-h1,
-label {
+h1 {
   margin-left: 20px;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
 
-#input-title,
-#input-description {
+form > label {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+form > input {
   width: 200px;
   padding: 8px;
-  margin-top: 10px;
-  margin-bottom: 20px;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 #btn-submit {
@@ -30,14 +36,15 @@ label {
   padding: 40px;
   display: grid;
   grid-template-areas: "card-image card-description";
-  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-columns: 0.2fr 1.5fr;
   grid-template-rows: 1.5fr;
-  column-gap: 50px;
+  column-gap: 30px;
   box-shadow: 5px 10px 8px #888888;
 }
 
 #card > #card-image {
   grid-area: card-image;
+  /* background-color: bisque; */
 }
 
 #card > #card-image > #card-back-image {
@@ -57,6 +64,7 @@ label {
 
 #card > #card-description {
   grid-area: card-description;
+  /* background-color: coral; */
   display: flex;
   flex-direction: column;
   flex: 1.5;
